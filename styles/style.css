@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  width: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+  font-family: Montserrat;
+  font-weight: 600;
+  height: 120px;
+  padding-top: 30px;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #4700a5;
+}
+
+h1 {
+  font-size: 116px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  position: relative;
+  color: white;
+  font-family: Montserrat;
+}
+
+.about-section {
+  background: rgb(241, 78, 130);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 78, 130, 1) 35%,
+    rgba(130, 14, 213, 1) 95%
+  );
+}
+.nav-section {
+  background: rgb(241, 78, 130);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 78, 130, 1) 35%,
+    rgba(130, 14, 213, 1) 95%
+  );
+}
+
+.about-section p {
+  font-size: 21px;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+  height: 180px;
+  letter-spacing: 2px;
+}
+
+/* h1::before {
+  content: "";
+  background-image: url(/wecreate-assets/img/wave-top.svg);
+  width: 300px;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+h1::after {
+  content: "";
+  background-image: url(/wecreate-assets/img/wave-top2.svg);
+  width: 400px;
+  height: auto;
+  background-repeat: no-repeat;
+} */
