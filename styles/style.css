@@ -8,7 +8,7 @@ body {
   padding: 0;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 .container {
   max-width: 960px;
@@ -38,15 +38,39 @@ nav ul a {
   text-decoration: none;
   font-size: 24px;
   color: #4700a5;
+  font-size: inherit;
 }
 
 .nav-hamburger {
-  height: 3px;
-  width: 15px;
-  background-color: black;
+  height: 7px;
+  width: 32px;
+  background-color: white;
   border-radius: 5px;
   position: relative;
   display: none;
+  left: 82%;
+  top: 45px;
+}
+
+.nav-hamburger::before {
+  content: "";
+  height: 7px;
+  width: 32px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+  top: -13px;
+}
+.nav-hamburger::after {
+  content: "";
+  height: 7px;
+  width: 32px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+  top: 13px;
 }
 
 h1 {
@@ -92,45 +116,247 @@ h1 {
 
 .about-section::before {
   content: "";
-  background-image: url(/wecreate-assets/img/wave-top.svg);
-  width: 300px;
+  background-image: url("/wecreate-assets/img/wave-top2.svg");
+  width: 315px;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 0;
+  bottom: -30px;
   right: 0;
   z-index: 1;
-  height: 100px;
+  height: 150px;
 }
 
 .about-section::after {
   content: "";
-  background-image: url(/wecreate-assets/img/wave-top2.svg);
-  width: 400px;
-  height: 200px;
+  background-image: url("/wecreate-assets/img/wave-top.svg");
+  width: 565px;
+  height: 130px;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: -150px;
-  right: 0;
+  bottom: -90px;
+  right: -10%;
   z-index: 1;
 }
 
+h2 {
+  font-size: 27px;
+  color: #4700a5;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+}
+
+.projects-section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.projects-section .projects-content {
+  flex-basis: 35%;
+  margin: 50px;
+}
+
+.projects-section .projects-img {
+  flex-basis: 35%;
+  margin: 50px;
+}
+
+.projects-section a {
+  text-decoration: none;
+  border: solid;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+}
+
+.team-section .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.team-section .team-content {
+  flex-basis: 35%;
+}
+
+.team-section .team-img {
+  flex-basis: 35%;
+}
+
+.team-section a {
+  text-decoration: none;
+  border: solid;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  display: flex;
+  font-size: 73px;
+  font-family: "Montserrat";
+  justify-content: center;
+  color: white;
+}
+
+.quote-section {
+  background-image: url(/wecreate-assets/img/fullbg.jpg);
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.quote-section::before {
+  content: "";
+  background-image: url(/wecreate-assets/img/wave-top.svg);
+  width: 500px;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 150px;
+  z-index: 1;
+}
+
+.mission-section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mission-section .mission-content {
+  flex-basis: 35%;
+  margin: 50px;
+}
+.mission-section .mission-img {
+  flex-basis: 35%;
+  margin: 50px;
+}
+
+.mission-section a {
+  text-decoration: none;
+  border: solid;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.contact-section {
+  background-color: #d3c2e9;
+}
+
+.contact-section .container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section .contact-form {
+  flex-basis: 35%;
+}
+
+.contact-section .contact-text {
+  flex-basis: 35%;
+  padding: 50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.input#name {
+  border-bottom: black;
+}
+
+.contact-text {
+  font-size: 65px;
+  font-family: Montserrat;
+  color: #4700a5;
+  font-weight: bold;
+}
+
+/* RWD */
+
 @media screen and (max-width: 992px) {
-  .about-section {
-    background: yellow;
-  }
   h1 {
-    font-size: 50px;
+    font-size: 65px;
   }
+
   .nav-section nav {
     display: none;
   }
   .nav-hamburger {
     display: flex;
   }
+  .nav-hamburger::before {
+    display: flex;
+  }
+  .nav-hamburger::after {
+    display: flex;
+  }
+
+  .about-section p {
+    font-size: 15px;
+  }
+
+  .projects-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects-section .projects-content {
+    flex-basis: 35%;
+    margin: 50px;
+  }
+
+  .projects-section .projects-img {
+    flex-basis: 35%;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .team-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-section .team-content {
+    flex-basis: 35%;
+    margin: 50px;
+  }
+
+  .team-section .team-img {
+    flex-basis: 35%;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .about-section {
-    background: red;
+    background: rgb(241, 78, 130);
+  }
+  .nav-section {
+    background: rgb(241, 78, 130);
+  }
+  .about-section::after {
+    width: 300px;
+    bottom: -163px;
+  }
+  .about-section::before {
+    width: 250px;
+    bottom: -8px;
+  }
+  .about-section::before {
+    display: none;
+  }
+  .about-section::after {
+    display: none;
   }
 }
