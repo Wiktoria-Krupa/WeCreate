@@ -245,7 +245,8 @@ h3 {
 }
 
 .contact-section {
-  background-color: #d3c2e9;
+  background: rgb(241, 78, 130);
+  background: linear-gradient(90deg, rgba(241, 78, 130, 1) 35%, #820ed5 95%);
 }
 
 .contact-section .container {
@@ -258,24 +259,53 @@ h3 {
 }
 
 .contact-section .contact-text {
-  flex-basis: 35%;
+  flex-basis: 60%;
   padding: 50px;
+}
+h3 {
+  display: flex;
+  font-size: 9px;
+  font-family: "Montserrat";
+  color: #40168a;
+  justify-content: flex-start;
 }
 
 .contact-form {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   width: 400px;
 }
 
-.input#name {
-  border-bottom: black;
+.contact-form label {
+  color: #33086a;
+}
+
+.contact-form input {
+  background: transparent;
+  border: unset;
+  border-bottom: 2px solid #33086a;
+  margin-bottom: 20px;
+}
+.contact-form textarea {
+  background: transparent;
+  border: 2px solid #33086a;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form button {
+  background: transparent;
+  border: solid white;
+  width: 130px;
+  height: 35px;
+  color: white;
 }
 
 .contact-text {
-  font-size: 65px;
+  font-size: 62px;
   font-family: Montserrat;
-  color: #4700a5;
+  color: #3e0985;
   font-weight: bold;
 }
 
