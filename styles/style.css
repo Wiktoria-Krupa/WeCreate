@@ -87,20 +87,21 @@ h1 {
 }
 
 .about-section {
-  background: rgb(241, 78, 130);
+  background: rgb(236, 108, 149);
   background: linear-gradient(
     90deg,
-    rgba(241, 78, 130, 1) 35%,
-    rgba(130, 14, 213, 1) 95%
+    rgba(236, 108, 149, 1) 31%,
+    rgba(154, 47, 247, 1) 83%
   );
+
   position: relative;
 }
 .nav-section {
-  background: rgb(241, 78, 130);
+  background: rgb(236, 108, 149);
   background: linear-gradient(
     90deg,
-    rgba(241, 78, 130, 1) 35%,
-    rgba(130, 14, 213, 1) 95%
+    rgba(236, 108, 149, 1) 31%,
+    rgba(154, 47, 247, 1) 83%
   );
 }
 
@@ -152,7 +153,7 @@ h2 {
 .projects-section .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .projects-section .projects-content {
@@ -164,6 +165,22 @@ h2 {
   flex-basis: 35%;
   margin: 50px;
 }
+
+.projects-section {
+  position: relative;
+}
+
+.projects-section::after {
+  position: absolute;
+  content: "1.";
+  font-size: 250px;
+  left: 190px;
+  font-weight: 700;
+  top: 30px;
+  color: #d429a59c;
+  z-index: -1;
+}
+
 .projects-section p {
   color: #3c0770a6;
   letter-spacing: 0.5px;
@@ -185,7 +202,7 @@ h2 {
 .team-section .container {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .team-section .team-content {
@@ -194,6 +211,21 @@ h2 {
 
 .team-section .team-img {
   flex-basis: 35%;
+}
+
+.team-section {
+  position: relative;
+}
+
+.team-section::after {
+  position: absolute;
+  content: "2.";
+  font-size: 250px;
+  left: 750px;
+  font-weight: 700;
+  top: 10px;
+  color: #ff3c859c;
+  z-index: -1;
 }
 
 .team-section p {
@@ -229,12 +261,14 @@ h3 {
   display: flex;
   align-items: center;
   position: relative;
+  background-position-y: -90px;
+  background-position-x: -170px;
 }
 
 .quote-section::before {
   content: "";
   background-image: url(/wecreate-assets/img/wave-bottom.svg);
-  width: 500px;
+  width: 650px;
   background-repeat: no-repeat;
   position: absolute;
   height: 150px;
@@ -245,7 +279,7 @@ h3 {
 .mission-section .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .mission-section .mission-content {
@@ -255,6 +289,19 @@ h3 {
 .mission-section .mission-img {
   flex-basis: 35%;
   margin: 50px;
+}
+.mission-section {
+  position: relative;
+}
+.mission-section::after {
+  position: absolute;
+  content: "3.";
+  font-size: 250px;
+  left: 150px;
+  font-weight: 700;
+  top: 40px;
+  color: #d514a89c;
+  z-index: -1;
 }
 
 .mission-section p {
@@ -278,8 +325,12 @@ h3 {
 }
 
 .contact-section {
-  background: rgb(241, 78, 130);
-  background: linear-gradient(90deg, rgba(241, 78, 130, 1) 35%, #820ed5 95%);
+  background: rgb(236, 108, 149);
+  background: linear-gradient(
+    90deg,
+    rgba(236, 108, 149, 1) 31%,
+    rgba(154, 47, 247, 1) 83%
+  );
 }
 
 .contact-section .container {
@@ -312,6 +363,7 @@ h4 {
 
 .contact-form label {
   color: #33086a;
+  font-size: small;
 }
 
 .contact-form input {
@@ -403,10 +455,10 @@ h4 {
 
 @media screen and (max-width: 576px) {
   .about-section {
-    background: rgb(241, 78, 130);
+    background: #ec6c95;
   }
   .nav-section {
-    background: rgb(241, 78, 130);
+    background: #ec6c95;
   }
   .about-section::after {
     width: 300px;
