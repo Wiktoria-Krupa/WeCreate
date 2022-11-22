@@ -256,7 +256,7 @@ h3 {
 }
 
 .quote-section {
-  background-image: url(/wecreate-assets/img/fullbg.jpg);
+  background-image: url(./wecreate-assets/img/fullbg.jpg);
   height: 250px;
   display: flex;
   align-items: center;
@@ -267,7 +267,7 @@ h3 {
 
 .quote-section::before {
   content: "";
-  background-image: url(/wecreate-assets/img/wave-bottom.svg);
+  background-image: url(./wecreate-assets/img/wave-bottom.svg);
   width: 650px;
   background-repeat: no-repeat;
   position: absolute;
